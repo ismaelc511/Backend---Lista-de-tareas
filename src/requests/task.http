@@ -1,0 +1,48 @@
+@api= http://localhost:3000/task
+
+GET {{api}}
+
+###
+GET {{api}}/1
+
+###
+
+GET {{api}}/count
+
+###
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "idUsuarioPropietario": 1,
+    "idUsuarioAsignado": 2,
+    "nombre": "Ir al fruver",
+    "descripcion": "Comprar cebolla y tomate",
+    "Fecha": null,
+    "fechaEstimadaFinalizacion": "1970-01-01 00:00:01",
+    "fechaDeEdicion": null,
+    "idEstado": 1,
+    "idPrioridad": 1,
+    "idCategoria": 1
+}
+
+###
+DELETE {{api}}/2
+
+###
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "idUsuarioPropietario": 1,
+    "idUsuarioAsignado": 2,
+    "nombre": "Comprar entrada concierto",
+    "descripcion": "Comprar entrada a Stereo Picnic",
+    "Fecha": null,
+    "fechaEstimadaFinalizacion": "2023-04-12 00:00:01",
+    "fechaDeEdicion": null,
+    "idEstado": 1,
+    "idPrioridad": 1,
+    "idCategoria": 1
+}
