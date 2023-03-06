@@ -1,0 +1,48 @@
+@api = http://localhost:3000/tasks
+
+GET {{api}}
+
+####
+
+GET {{api}}/1
+
+###
+
+GET {{api}}/count
+
+###
+POST  {{api}}
+Content-Type: application/json
+
+{
+    "idUsuarioPropietario":1,
+    "idUsuarioAsignado":1,
+    "nombre": "Esto es una tarea numero 7",
+    "descripcion": "Esta es la descripcion de una tarea numero 5",
+    "Fecha": null,
+    "fechaEstimadaFinalizacion": "1970-01-01 00:00:01",
+    "fechaDeEdicion": null,
+    "idEstado":1,
+    "idPrioridad": 1,
+    "idCategoria":1
+}
+
+###
+DELETE {{api}}/5
+
+###
+PUT {{api}}/2
+Content-Type: application/json
+
+{
+    "idUsuarioPropietario":1,
+    "idUsuarioAsignado":1,
+    "nombre": "Esto es una actualizacion de tarea 52",
+    "descripcion": "Esta es la descripcion actuakizada de una tarea",
+    "Fecha": null,
+    "fechaEstimadaFinalizacion": "1970-01-01 00:00:01",
+    "fechaDeEdicion": null,
+    "idEstado":1,
+    "idPrioridad": 1,
+    "idCategoria":1
+}
